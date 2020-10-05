@@ -61,7 +61,9 @@ func sendHttpRequest(url string) ([]byte, error) {
 	if found == true {
 		if ignore == "yes" || ignore == "true" {
 			tr = &http.Transport{
-				TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+				TLSClientConfig: &tls.Config{
+                    Renegotiation:      tls.RenegotiateOnceAsClient,
+                    InsecureSkipVerify: true},
 			}
 		}
 	}
