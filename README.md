@@ -86,4 +86,7 @@ AWS_SECRET_ACCESS_KEY=A23MSKSKSJASHDIWM
   * `CYBERARK_CCP_CLIENT_CERT`: The client certificate
   * `CYBERARK_CCP_CLIENT_KEY`: The client key
 
+* Some environments may need to ignore cert errors:
+  * `CYBERARK_CCP_IGNORE_CERT`: Yes | True
+
 ---
