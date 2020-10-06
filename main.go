@@ -55,7 +55,12 @@ func constructSecretUrl(url string, urlQuery string) string {
 }
 
 func sendHttpRequest(url string, useClientCert bool, cert tls.Certificate) ([]byte, error) {
+
+	// Setup HTTPS client
 	tlsConfig := &tls.Config{}
+
+	// Use correct TLS version
+	tlsConfig.Renegotiation = tls.RenegotiateOnceAsClient
 
 	// Set client cert if using it
 	if useClientCert {
