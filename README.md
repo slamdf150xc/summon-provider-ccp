@@ -13,7 +13,7 @@ CyberArk CCP provider for [Summon](https://github.com/cyberark/summon).
 ## Install
 
 Pre-built binaries and packages are available from GitHub releases
-[here](https://github.com/AndrewCopeland/summon-provider-ccp/releases).
+[here](https://github.com/slamdf150xc/summon-provider-ccp/releases/tag/v0.0.2).
 
 ### Homebrew
 
@@ -29,7 +29,7 @@ Currently not supported
 
 
 ### Manual Install
-Otherwise, download the [latest release](https://github.com/AndrewCopeland/summon-provider-ccp/releases) and extract it to the directory `/usr/local/lib/summon`.
+Otherwise, download the [latest release](https://github.com/slamdf150xc/summon-provider-ccp/releases/tag/v0.0.2) and extract it to the directory `/usr/local/lib/summon`.
 
 ## Usage in isolation
 
@@ -83,5 +83,7 @@ AWS_SECRET_ACCESS_KEY=A23MSKSKSJASHDIWM
 
 * Set the Environment Variable:
   * `CYBERARK_CCP_URL`: The url to the CCP server
+  * `CYBERARK_CCP_CLIENT_CERT`: The client certificate
+  * `CYBERARK_CCP_CLIENT_KEY`: The client key
 
 ---
