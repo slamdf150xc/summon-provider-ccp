@@ -25,8 +25,9 @@ Currently not supported
 
 ### Auto Install
 
-Currently not supported
+Use the auto-install script. This will install the latest version of summon-provider-ccp. The script requires sudo to place summon-provider-ccp in /usr/local/lib/summon.
 
+curl -sSL https://raw.githubusercontent.com/slamdf150xc/summon-provider-ccp/master/install.sh | bash
 
 ### Manual Install
 Otherwise, download the [latest release](https://github.com/slamdf150xc/summon-provider-ccp/releases/tag/v0.0.2) and extract it to the directory `/usr/local/lib/summon`.
